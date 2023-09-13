@@ -90,3 +90,69 @@
     /* position: sticky; */
     /* top: 0px; */
 }
+
+
+/* 
+    ? Display Property
+    * treats an element as block or inline
+    * block is created top-bottom, spans full page width
+    * inline is created side-by-side, spans width of its content
+
+*/
+
+.display-container {
+    margin-top: 2em;
+}
+
+.block-container {
+    border: 2px solid black;
+    margin: 5px;
+
+    /* display: inline; */
+    /* This will make block element behave as inline */
+    /* we can't change width or height of block changed to act like an inline */
+
+}
+
+.inline-element {
+    margin: 5px;
+
+    /* display: block; */
+    /* makes inline element behave like a block, but doesn't extend its padding full width */
+}
+
+.inline-block {
+    border: 2px solid black;
+    margin: 5px;
+
+    /* display: inline-block; */
+    /* allows us to set the width and height of inline */
+    /* if content exceeds width of viewport, content won't get chopped, like a block element */
+    /* width: 125px; */
+}
+
+
+/* 
+    ? Float Property
+    * shifts element left or right
+*/
+
+.float-container {
+    margin-top: 2em;
+    border: 2px solid blue;
+    height: 28vw;
+}
+
+.float-box {
+    margin: 5px;
+    border: 2px solid orange;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+
+    float: right;
+
+    /* position: relative; */
+    /* top: 125px; */
+    /* how to move element up or down */
+}
