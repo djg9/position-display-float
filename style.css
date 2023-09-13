@@ -1,0 +1,92 @@
+/* CSS Position Properties
+
+    ? static
+    * default
+    * positioned in relation to elements
+    * top, bottom, left, right, z-index have NO effect
+
+    ? relative
+    * just like static
+    * can be changed using top, bottom, left, right, z-index
+    * values are relative to its original static position
+
+    ? absolute
+    * removes the element from the flow
+    * positions it relatvie to parent container
+    * if parent is static, it will move outside of the parent container
+    * if parent is relative, it will move within the parent container
+    * positioning defined by top, bottom, left, right, z-index
+
+    ? fixed
+    * like absolute
+    * positioned to viewport
+    * doesn't move when scrolling
+    * positioning defined by top, bottom, left, right, z-index
+
+    ? sticky
+    * mix of relative and fixed
+    relative to the flow
+    position definition used for when you start scrolling
+    * stays fixed when scrolling; relative when stationary
+ */
+
+
+.parent-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 175vw;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* position: relative; */
+}
+
+.child {
+    padding: 25px;
+}
+
+.child1 {
+    border: 2px solid red;
+    background-color: red;
+    /* right: 250px; */
+    /* top: 1000px; */
+    /* static - position properties have no effect on it */
+}
+
+.child2 {
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+
+    position: relative;
+    /* Nothing - acts just like static  */
+    /* right: 25px; */
+    /* top: 25px; */
+    /* Shifts, top, right values in relation to its original positioning (static) */
+}
+
+.child3 {
+    border: 2px solid green;
+    background-color: green;
+
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+
+}
+
+.child4 {
+    border: 2px solid teal;
+    background-color: teal;
+
+    /* position: fixed; */
+    /* top: 0px; */
+}
+
+.child5 {
+    border: 2px solid gray;
+    background-color: gray;
+
+    /* position: sticky; */
+    /* top: 0px; */
+}
